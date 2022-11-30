@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+:root {
+    --body-bg-color: #FAF7FD;
+    --red: #FC433E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, a {
+    font-family: Poppins;
+    color: var(--red);
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+main {
+    height: 100vh;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-wrapper {
+    padding: 6px;
+    border: 2px solid var(--red);
+    width: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.picture-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.6) 100%);
+    border-radius: 50%;
+}
+
+.social-tag {
+    margin-top: 12px;
+}
+
+.social-links ul {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-links li {
+    list-style-type: none;
+    margin: 6px 0;
+    max-width: 326px;
+    width: 90vw;
+    border: 2px solid var(--red);
+    transition: 150ms;
+}
+
+.social-links li:hover {
+    opacity: 0.5;
+}
+
+.social-button {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+}
+
+.social-icons {
+    margin-top: 58px;
+}
+
+.social-icons ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icons ul li {
+    list-style-type: none;
+    width: 32px;
+    height: 32px;
+    margin: 0 16px;
+    transition: 150ms;
+}
+
+.social-icons ul li:hover {
+    opacity: 0.5;
+}
+
+.social-icons .social-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
