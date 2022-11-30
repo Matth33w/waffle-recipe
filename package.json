@@ -1,5 +1,5 @@
 {
-  "name": "social-links",
+  "name": "waffle-recipe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "node src/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matth33w",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
